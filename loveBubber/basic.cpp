@@ -1,32 +1,42 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-class Hero{
-// properties------
+class Hero
+{
+    // properties------
+private:
+    int health;
 
 public:
-int health;
-char level;
+    char level;
 
+    int getHealth()
+    {
+        return health;
+    }
 
+    void setHealth(int h)
+    {
+        health = h;
+    }
 };
 
+int main()
+{
+    // creation of objects
+    Hero aman; 
 
-int main(){
-// creation of objects
-    Hero aman;
+    cout << "size " << sizeof(aman) << endl;
 
-  aman.health = 90;
+    //   aman.health = 90;
+    aman.setHealth(70);
+    cout << "aman health -> " << aman.getHealth() << endl;
 
-  aman.level = 'A';
+    aman.level = 'A';
 
+    // cout<<"aman health -> "<<aman.health<<endl;
 
-    cout<<"size "<< sizeof(aman)<<endl;
-
-    cout<<"aman health -> "<<aman.health<<endl;
-
-     cout<<"aman health -> "<<aman.level<<endl;
+    cout << "aman level -> " << aman.level << endl;
     return 0;
-
 }
