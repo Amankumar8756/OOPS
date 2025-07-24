@@ -18,7 +18,7 @@ public:
         this->level = level;
     }
 
-    // Default constructor
+    // Default constructorre
     Hero()
     {
         cout << "I am a constructor " << endl;
@@ -56,26 +56,26 @@ public:
 
 int main()
 {
-    Hero hero1; // Calls default constructor
+    // Hero hero1; // Calls default constructor
 
-    hero1.setHealth(22);
-    hero1.setLevel('A');
-    char name[7] = "AmanK";  // Fixed name
-    hero1.setName(name);
+    // hero1.setHealth(22);
+    // hero1.setLevel('A');
+    // char name[7] = "AmanK";  // Fixed name
+    // hero1.setName(name);
 
-    hero1.print(); // Display hero details
+    // hero1.print(); // Display hero details
 
-    // Use default copy constructor
+    // // Use default copy constructor
 
    
-    Hero hero2(hero1);  // Copy hero1 into hero2
-    hero2.print();
+    // Hero hero2(hero1);  // Copy hero1 into hero2
+    // hero2.print();
 
 
-     hero1.name[0]='M';
-     hero1.print();
+    //  hero1.name[0]='M';
+    //  hero1.print();
 
-     hero2.print();
+    //  hero2.print();
 
 
 
