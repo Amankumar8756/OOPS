@@ -56,6 +56,7 @@ public:
 
 int main()
 {
+    
     // Hero hero1; // Calls default constructor
 
     // hero1.setHealth(22);
