@@ -10,6 +10,7 @@ public:
     char *name;  // Fixed size array for name
     char level;
     int age;
+    static int timeTocomplate;
 
     // Parameterized constructor
     Hero(int health, char level)
@@ -22,6 +23,12 @@ public:
     Hero()
     {
         cout << "I am a constructor " << endl;
+    }
+
+    // i am a distructor
+
+    ~Hero(){
+        cout<<"I am a deconstructor "<<endl;
     }
 
     void print()
@@ -54,9 +61,38 @@ public:
     }
 };
 
+int Hero::timeTocomplate = 5;
+
 int main()
 {
-    
+
+cout<<Hero::timeTocomplate<<endl;
+
+
+cout<<Hero::timeTocomplate<<endl;
+
+
+
+
+
+
+
+
+
+   
+   // distructor deallcate----------
+
+//    Hero a;
+
+//    Hero *b = new Hero();
+   
+   
+//    delete b;
+   
+   
+
+   
+    // default coy constructor------------------
     // Hero hero1; // Calls default constructor
 
     // hero1.setHealth(22);
@@ -77,15 +113,6 @@ int main()
     //  hero1.print();
 
     //  hero2.print();
-
-
-
-
-
-
-
-
-
 
 
 // Hero aman(70, 'c');
