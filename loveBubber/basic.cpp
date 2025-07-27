@@ -59,7 +59,12 @@ public:
     {
         strcpy(this->name, name);
     }
+
+    static int random(){
+       return timeTocomplate;
+    }
 };
+
 
 int Hero::timeTocomplate = 5;
 
@@ -67,9 +72,9 @@ int main()
 {
 
 cout<<Hero::timeTocomplate<<endl;
+cout<<Hero::random()<<endl;
 
 
-cout<<Hero::timeTocomplate<<endl;
 
 
 
@@ -82,12 +87,12 @@ cout<<Hero::timeTocomplate<<endl;
    
    // distructor deallcate----------
 
-//    Hero a;
+ //    Hero a;
 
-//    Hero *b = new Hero();
+ //    Hero *b = new Hero();
    
    
-//    delete b;
+ //    delete b;
    
    
 
@@ -115,14 +120,14 @@ cout<<Hero::timeTocomplate<<endl;
     //  hero2.print();
 
 
-// Hero aman(70, 'c');
+ // Hero aman(70, 'c');
 
-// aman.print();
+ // aman.print();
 
-// // copy constructor 
+ // // copy constructor 
 // Hero mota(aman);
 
-// mota.print();
+  // mota.print();
 
 
     // creation of objects  -- statically
