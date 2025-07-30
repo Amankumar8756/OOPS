@@ -35,5 +35,6 @@ int main() {
 
 
     obj1.sleep(); 
+      obj1.sleep(); 
     return 0;
 }
