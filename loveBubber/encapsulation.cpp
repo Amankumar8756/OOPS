@@ -21,4 +21,6 @@ int main(){
     Student first;
 
     cout<<" sb shi challrha hai= "<<endl;
+
+    cout<<" sb shi challrha hai= "<<endl;
 }
