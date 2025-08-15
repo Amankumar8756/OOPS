@@ -10,6 +10,9 @@ class Customer{
 
    static  int total_customer;
 
+   static int total_balance;
+
+
     public:
 
     Customer(string name, int account_number, int balance){
@@ -22,6 +25,10 @@ class Customer{
 
         total_customer++;
 
+        total_balance += balance;
+
+  
+
     }
 
     void display(){
@@ -29,12 +36,34 @@ class Customer{
         cout<<name<<" "<<account_number<<" "<<balance<<endl; 
     }
 
+    void deposit(int amount){
+        if(amount>0){
+            balance += amount;
+            total_balance += amount;
+        }
+    }
+
+
+    void withdrow(int amount){
+
+        if(amount<balance && amount>0){
+            balance -=amount;
+            total_balance -= amount;
+        }
+    }
+
    static void total_customers(){
-        cout<<" total-custmers:- "<<total_customer<<endl;
+        cout<<" total-custmers:-> "<<total_customer<<endl;
+         cout<<" total-balances:-> "<<total_balance<<endl;
+        
     }
 };
 
 int Customer::total_customer= 0;
+
+int Customer::total_balance= 0;
+
+
 
 int main(){
 
@@ -44,6 +73,10 @@ int main(){
   
     Customer A3("mota",3,20000);
   
+    A3.deposit(500);
+    A3.withdrow(100);
+
     Customer::total_customers();
+     
   
 }
