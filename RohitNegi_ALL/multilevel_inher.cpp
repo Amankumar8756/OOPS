@@ -49,4 +49,5 @@ int main(){
     Manager a1("aman",500, "sde1");
     a1.display();
     a1.monthly_salary();
+    a1.introduction();
 }
