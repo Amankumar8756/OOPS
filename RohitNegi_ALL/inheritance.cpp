@@ -26,5 +26,6 @@ int main(){
     A.roll_no = 13;
    A.fees = 200;
    A.display();
+   A.display();
 
 }
