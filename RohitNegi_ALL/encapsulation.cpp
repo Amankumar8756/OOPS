@@ -40,7 +40,7 @@ int main(){
     Customer a1("Aman", 500) ;
     a1.display();
     a1.deposit(40);
-   a1.display();
+
     
 
 }
