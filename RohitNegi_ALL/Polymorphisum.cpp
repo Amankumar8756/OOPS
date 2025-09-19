@@ -23,5 +23,8 @@ int main(){
     cout<<"calculate areas - "<<A.calculateArea(4)<<endl;
 
      cout<<"calculate rectangles - "<<A.calculateArea(4,4)<<endl;
+       cout<<"calculate areas - "<<A.calculateArea(4)<<endl;
+
+     cout<<"calculate rectangles - "<<A.calculateArea(4,4)<<endl;
 
 }
