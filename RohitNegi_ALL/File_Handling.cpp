@@ -11,5 +11,11 @@ int main(){
     fout<<"Hello Aman how are ";
 
     fout.close();
+     fout.open("Aman.txt");
+
+    fout<<"Hello Aman how are ";
+
+    fout.close();
 }
+
 
