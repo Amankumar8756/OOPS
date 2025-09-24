@@ -109,4 +109,10 @@ int main() {
 
     Teacher t1("Madam", 20, 2200);
     t1.works();
+
+       Teacher t2("Madam", 20, 2200);
+    t2.works();
+  
+      A.display();
+
 }
