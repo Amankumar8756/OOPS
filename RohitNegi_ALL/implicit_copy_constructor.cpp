@@ -17,5 +17,5 @@ int main() {
 
 
     cout << s1.name << " " << s1.age << endl;
-    cout << s2.name << " " << s2.age << endl; // Aman 21
+
 }
