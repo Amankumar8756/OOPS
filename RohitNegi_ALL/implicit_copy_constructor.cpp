@@ -18,4 +18,7 @@ int main() {
 
     cout << s1.name << " " << s1.age << endl;
 
+     cout << s1.name << " " << s1.age << endl;
+      cout << s1.name << " " << s1.age << endl;
+
 }
